@@ -1,0 +1,33 @@
+.dropdown {
+	display: none;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	    -ms-transform: translate(-50%,0);
+	        transform: translate(-50%,0);
+	}
+.dropdown__wrapper {
+	position: relative;
+	background: #fff;
+	white-space: nowrap;
+	}
+
+.dropdown__wrapper::before {
+	content: "";
+	position: absolute;
+	border-width: 0 6px 6px 6px;
+	border-color: transparent transparent #fff transparent;
+	border-style: solid;
+	left: 50%;
+	top: -6px;
+	margin-left: -6px;
+	}
+.dropdown__column,
+.dropdown__column--phones {
+	display: inline-block;
+	width: 250px;
+	white-space: normal;
+}
+.dropdown__column--phones {
+	padding: 0 12px;
+}

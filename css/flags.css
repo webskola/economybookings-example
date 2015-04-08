@@ -1,0 +1,15 @@
+.flag {
+	display: inline-block;
+	width: 14px;
+	height: 9px;
+	background: url("../img/flags.png") no-repeat;
+}
+.flag--pt {
+	background-position: 0 0;
+}
+.flag--nl {
+	background-position: 0 -9px;
+}
+.flag--lv {
+	background-position: 0 -18px;
+}

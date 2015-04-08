@@ -1,0 +1,107 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css");
+@import url("fonts.css");
+@import url("dropdown.css");
+@import url("flags.css");
+@import url("phoneslist.css");
+
+
+.cf:before,
+.cf:after {
+	content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+	*zoom: 1;
+}
+
+
+body {
+	background: #000;
+	font-family: open_sansregular;
+}
+.site-header {
+	height: 64px;
+	background: #1a5880;
+}
+.wrapper {
+	width: 960px;
+	margin: auto;
+}
+.brand__logo {
+	float: left;
+	padding: 19px 0;
+}
+.lovers {
+	color: #bacdd9;
+	padding: 22px 30px 20px;
+	float: left;
+}
+.lovers__heart {
+	font-family: fontawesome;
+	margin-right: 3px;
+}
+.lovers__count {
+	font-family: open_sanssemibold;
+	font-size: 16px;
+}
+.lovers__label {
+	font-family: open_sanslight;
+	font-size: 14px;
+}
+.settings {
+	float: right;
+}
+
+.phones {
+	float: left;
+	position: relative;
+}
+.phones__button {
+	color: #fff;
+	padding: 15px 46px 16px 25px;
+	background: transparent;
+	border: 0;
+}
+.phones__button:focus,
+.phones__button:hover {
+	background: #133f5c;
+	outline: 0;
+}
+.phones__button:focus + .phones__dropdown {
+	display: block;
+}
+.phones__icon {
+	font-family: fontawesome;
+	font-size: 18px;
+	margin-right: 4px;
+	vertical-align: -3px;
+}
+.phones__dropdown {
+	padding-top: 6px;
+}
+.phones__fullphone {
+	font-size: 15px;
+}
+.phones__code {
+	font-family: open_sanslight;
+}
+.phones__phone {
+	font-family: open_sanssemibold;
+}
+.phones__label {
+	font-size: 11px;
+	display: block;
+	margin-top: -5px;
+	text-align: right;
+	color: #bacdd9;
+}
+.phones__caret {
+	font-family: fontawesome;
+	font-size: 13px;
+	position: absolute;
+	right: 25px;
+	top: 25px;
+}
