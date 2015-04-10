@@ -9,7 +9,8 @@
 .dropdown__wrapper {
 	position: relative;
 	background: #fff;
-	white-space: nowrap;
+	border-radius: 3px;
+	box-shadow: 5px 5px 15px rgba(0,0,0,.25);
 	}
 
 .dropdown__wrapper::before {
@@ -22,12 +23,28 @@
 	top: -6px;
 	margin-left: -6px;
 	}
+.dropdown__row--phones{
+	padding: 9px 8px;
+	white-space: nowrap;
+	font-size: 0;
+}
 .dropdown__column,
 .dropdown__column--phones {
 	display: inline-block;
-	width: 250px;
+	vertical-align: top;
 	white-space: normal;
+	font-size: 16px;
 }
 .dropdown__column--phones {
+	width: 248px;
 	padding: 0 12px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	margin-left: -1px;
+}
+.dropdown__column--phones:first-child {
+	border-left: none;
+}
+.dropdown__column--phones:last-child {
+	border-right: none;
 }

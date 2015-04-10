@@ -3,7 +3,7 @@
 	padding: 0;
 }
 .phoneslist__item {
-	margin: 16px 0;
+	padding: 8px 0;
 	display: block;
 }
 .phoneslist__flag {

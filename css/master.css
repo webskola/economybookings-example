@@ -19,7 +19,7 @@
 
 
 body {
-	background: #000;
+	/*background: #000;*/
 	font-family: open_sansregular;
 }
 .site-header {
@@ -70,7 +70,7 @@ body {
 	background: #133f5c;
 	outline: 0;
 }
-.phones__button:focus + .phones__dropdown {
+.phones__button:hover + .phones__dropdown {
 	display: block;
 }
 .phones__icon {
@@ -80,7 +80,7 @@ body {
 	vertical-align: -3px;
 }
 .phones__dropdown {
-	padding-top: 6px;
+	padding: 6px 0 0;
 }
 .phones__fullphone {
 	font-size: 15px;
@@ -98,10 +98,39 @@ body {
 	text-align: right;
 	color: #bacdd9;
 }
-.phones__caret {
+.caret,
+.caret--phones {
 	font-family: fontawesome;
 	font-size: 13px;
 	position: absolute;
+	right: 14px;
+	top: 25px;
+}
+.caret--phones {
 	right: 25px;
 	top: 25px;
+}
+.lang {
+	float: left;
+	position: relative;
+	padding: 13px 1px;
+}
+.lang__button {
+	color: #fff;
+	padding: 8px 36px 11px 14px;
+	height: 38px;
+	background: transparent;
+	border: 0;
+	border-radius: 3px;
+}
+.lang__label {
+	font-size: 13px;
+}
+.lang__button:focus,
+.lang__button:hover {
+	background: #133f5c;
+	outline: 0;
+}
+.lang__button:hover + .lang__dropdown {
+	display: block;
 }
