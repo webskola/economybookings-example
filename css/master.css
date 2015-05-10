@@ -22,23 +22,48 @@ body {
 	/*background: #000;*/
 	font-family: open_sansregular;
 }
+@media print {
+	body {
+		margin: 2cm 3cm;
+	}
+}
+
 .site-header {
 	height: 64px;
 	background: #1a5880;
 }
 .wrapper {
-	width: 960px;
+	max-width: 960px;
 	margin: auto;
 }
-.brand__logo {
+.brand {
 	float: left;
 	padding: 19px 0;
 }
+.brand__logo {
+	float: left;
+	width: 172px;
+	height: 26px;
+	/*background: url(../img/logo.png) no-repeat center;*/
+}
+/*@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.brand__logo {
+		background-image: url(../img/logo@2x.png);
+		background-size: 100%;
+	}
+}*/
+
 .lovers {
 	color: #bacdd9;
 	padding: 22px 30px 20px;
 	float: left;
 }
+@media screen and (max-width: 699px) {
+	.lovers {
+		display: none;
+	}
+}
+
 .lovers__heart {
 	font-family: fontawesome;
 	margin-right: 3px;
@@ -98,6 +123,16 @@ body {
 	text-align: right;
 	color: #bacdd9;
 }
+@media screen and (max-width: 479px) {
+	.phones__fullphone,
+	.phones__label {
+		display: none;
+	}
+	.phones__icon {
+		vertical-align: -7px;
+	}
+}
+
 .caret,
 .caret--phones {
 	font-family: fontawesome;
